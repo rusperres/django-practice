@@ -8,7 +8,6 @@ def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blog_project.settings')
     try:
-        # pyrefly: ignore [missing-import]
         from django.core.management import execute_from_command_line
     except ImportError as exc:
         raise ImportError(
